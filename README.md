@@ -8,4 +8,13 @@ This preview is designed for our customers to test out the feature and try our A
 2. API details are provided in the document - On-Demand Capacity Reservation-APIs.docx
 3. Same ARM templates are in the file - Sample ARM Template.zip
 
+**Note:** 
+1. The feature is currently in Private Preview phase. That means, customers should only use it for testing purposes. It is not recommended to use this feature at this point for any mission-critical workloads. 
+2. The feature is currently supported via ARM templates only. Other client tools support such as Azure Portal, CLI, PS etc. will be coming later.
+3.	During Private Preview, production SLAs will not be enforced. 
+
+**Billing** 
+During Private Preview, you will be charged for the virtual machines that are attached to a capacity reservation. You will also be charged for the unused capacity reservation spots. For more information on billing, please read “VM Capacity Reservations: Usage and Billing” section described later in the document.
+
+
 Let's get started!
