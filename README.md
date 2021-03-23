@@ -14,6 +14,7 @@ This preview is designed for our customers to test out the feature and try our A
 3.	During Private Preview, production SLAs will not be enforced. 
 
 **Billing** 
+
 During Private Preview, you will be charged for the virtual machines that are attached to a capacity reservation. You will also be charged for the unused capacity reservation spots. For more information on billing, please read “VM Capacity Reservations: Usage and Billing” section described later in the document.
 
 
