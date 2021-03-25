@@ -9,9 +9,9 @@ This preview is designed for our customers to test out the feature and try our A
 3. Same ARM templates are in the file - Sample ARM Template.zip
 
 **Note:** 
-1. The feature is currently in Private Preview phase. That means, customers should only use it for testing purposes. It is not recommended to use this feature at this point for any mission-critical workloads. 
-2. The feature is currently supported via ARM templates only. Other client tools support such as Azure Portal, CLI, PS etc. will be coming later.
-3.	During Private Preview, production SLAs will not be enforced. 
+1. The feature is currently in Private Preview phase. That means, customers should only use it for testing purposes. It is not recommended to use this feature at this point for any mission-critical workloads. **For the purpose of testing, it is advised to only create reservations for less than 5 instances of any VM size in order to keep the cost low**
+3. The feature is currently supported via ARM templates only. Other client tools support such as Azure Portal, CLI, PS etc. will be coming later.
+4.	During Private Preview, production SLAs will not be enforced. 
 
 **Billing** 
 
