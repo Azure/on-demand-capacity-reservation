@@ -18,6 +18,7 @@ This preview is designed for our customers to test out the feature and try our A
 During Private Preview, you will be charged for the virtual machines that are attached to a capacity reservation. You will also be charged for the unused capacity reservation spots. For more information on billing, please read “VM Capacity Reservations: Usage and Billing” section in the "On-Demand Capacity Reservation.docx" document. 
 
 **Supported Regions during Private Preview**
+
 During private preview, the only supported regions are South Central US and West Central US. That said, it is technically possible to deploy reservations in other regions as well. Howerver, the E2E functionaltiy may not work as expected. Hence, it is strongly advised to only use the supported regions for this private preview program. 
 
 
