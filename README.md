@@ -6,7 +6,7 @@ This preview is designed for our customers to test out the feature and try our A
 **Supporting documents**
 1. To learn more about the feature, please read the feature overview document called "On-Demand Capacity Reservation.docx"
 2. API details are provided in the document - On-Demand Capacity Reservation-APIs.docx
-3. Same ARM templates are in the file - Sample ARM Template.zip
+3. Sample ARM templates are in the file - Sample ARM Template.zip
 
 **Note:** 
 1. The feature is currently in Private Preview phase. That means, customers should only use it for testing purposes. It is not recommended to use this feature at this point for any mission-critical workloads. **For the purpose of testing, it is advised to only create reservations for less than 5 instances of any VM size in order to keep the cost low**
