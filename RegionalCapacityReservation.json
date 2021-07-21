@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type":"string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+                "description": "Azure region for the resource"
+            }
+        },
+        "CRGName": {
+            "type":"string",
+            "defaultValue": "myRegionalCapacityReservationGroup",
+            "metadata": {
+                "description": "Name of Capacity Reservation Group"
+            }
+        },
+        "CRName": {
+            "type":"string",
+            "defaultValue": "myCapacityReservation",
+            "metadata": {
+                "description": "Name of Capacity Reservation"
+            }
+        },
+        "SKU": {
+            "type": "string",
+             "defaultValue": "Standard_D2s_v3",
+            "metadata": {
+                "description": "VM size to be reserved. For e.g. D2s_v3"
+            }
+        },
+         "quantityReserved": {
+            "type": "string",
+            "defaultValue": "3",
+            "metadata": {
+                "description": "Quantity of VMs to be reserved"
+            }
+        }
+    },
+    "variables": {},
+    "resources": [
+        {
+            "type": "Microsoft.Compute/capacityReservationGroups",
+            "name": "[parameters('CRGName')]",
+            "apiVersion": "2020-06-01",
+            "location": "[parameters('location')]"
+        },
+        {
+            "type": "Microsoft.Compute/capacityReservationGroups/capacityReservations",
+            "name": "[concat(parameters('CRGName'),'/',parameters('CRName'))]",
+            "apiVersion": "2020-06-01",
+            "location": "[parameters('location')]",
+            "dependsOn": ["[concat('Microsoft.Compute/capacityReservationGroups','/',parameters('CRGName'))]"],
+          "sku": {
+                "name": "[parameters('SKU')]",
+                "capacity": "[parameters('quantityReserved')]"
+          }
+        }
+    ]
+  
+}
+
+
+
+
