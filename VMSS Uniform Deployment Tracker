@@ -1,3 +1,8 @@
 Below is the list of regions where VMSS Uniform is supported with Capacity Reservations. This list will be updated daily to track the latest state of deployment.
 
-Regions
+If the region is not in the list, that means the deployment is currently in progress and will be finished soon.  
+
+Regions supported:
+South Central US
+West Central US
+
