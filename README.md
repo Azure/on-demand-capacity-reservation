@@ -2,7 +2,9 @@ Below is the list of regions where VMSS Uniform is supported with Capacity Reser
 
 **Regions:**
 South Central US
+
 West Central US
+
 North Europe
 
 
