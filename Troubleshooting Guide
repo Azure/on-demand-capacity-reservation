@@ -22,9 +22,9 @@ If you have an existing Capacity Reservations that you are not able to use with 
    In order to attach running VM/VMSS to Capacity Reservation, they need to be deallocated first and then at the time of reallocation, reference Capacity Reservation as a property of the VM/VMSS. 
 
   
- -----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
+    
       
-
+ -----------------------------------------------------------------------------------------------------------------------------------------------------------------------   
 ***Not able to create Capacity Reservation***
 
 Following are some of the reasons why you are not able to create capacity reservation:
@@ -46,11 +46,11 @@ Following are some of the reasons why you are not able to create capacity reserv
 Steps to create Capacity Reservation
 https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-create
 
----------------------------------------------------------------------------------------------------------------------------------------
-
   
     
       
+---------------------------------------------------------------------------------------------------------------------------------------
+  
 ***Not able to delete Capacity Reservation or Group***
  
 Capacity Reservations can be deleted only when no Virtual Machines or Virtual Machine Scale Sets are associated to the group. 
@@ -60,14 +60,10 @@ Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-re
 Azure will only allow a Capacity Reservation Group to be deleted when all member Capacity Reservations.
 
 
------------------------------------------------------------------------------------------------------------------------------------------------
-
-
- 
- 
   
   
    
+-----------------------------------------------------------------------------------------------------------------------------------------------
 ***Capacity Reservation in “Failed” provisioning State***
 
 It is possible, in a very rare circumstances, that an existing Capacity Reservation goes into a “Failed” provisioning state due to a system error or due to a customer-initiated action such as modifying the quantity reserved. In most cases, just retrying should fix the issue. However, in case the Capacity Reservation goes into the “Failed” provisioning state as a result of increasing the quantity reserved, just retrying may not fix the issue. In this situation, follow the steps below to restore the reservation:
