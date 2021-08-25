@@ -21,6 +21,9 @@ If you have an existing Capacity Reservations that you are not able to use with 
 3. Trying to attach running VM/VMSS without deallocating them first 
    In order to attach running VM/VMSS to Capacity Reservation, they need to be deallocated first and then at the time of reallocation, reference Capacity Reservation as a property of the VM/VMSS. 
 
+  
+    
+      
 
 ***Not able to create Capacity Reservation***
 
