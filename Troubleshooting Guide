@@ -3,20 +3,20 @@ Not able to deploy Virtual Machines or Virtual Machine Scale Sets (Uniform) with
 If you have an existing Capacity Reservations that you are not able to use with Virtual Machines or Virtual Machine Scale Sets, it could be because of any of the reasons below:
 
 1.	Limitations and Restrictions of Capacity Reservation
-       a.	Not all deployment constraints are currently supported. Some of the constraints are:
-              i.	Proximity Placement Group
-              ii.	Update domains
-              iii.	UltraSSD storage 
-       b.	Spot VMs and Azure Dedicated Host Nodes are not supported with capacity reservation. 
-       c.	For the supported VM series during public preview, up to 3 Fault Domains (FDs) will be supported. A deployment with more than 3 FDs will fail to deploy against capacity reservation.
-       d.	Availability Sets are not supported with capacity reservation. 
-       e.	The scope for capacity reservation is subscription i.e., only the subscription that created the reservation can use it.  So, if your VM/VMSS is in a different subscription, please create a new reservation in that subscription or create your VM/VMSS in the subscription that already has access to the capacity reservation.
+       a. Not all deployment constraints are currently supported. Some of the constraints are:
+              i. Proximity Placement Group
+              ii. Update domains
+              iii. UltraSSD storage 
+       b. Spot VMs and Azure Dedicated Host Nodes are not supported with capacity reservation. 
+       c. For the supported VM series during public preview, up to 3 Fault Domains (FDs) will be supported. A deployment with more than 3 FDs will fail to deploy against capacity reservation.
+       d. Availability Sets are not supported with capacity reservation. 
+       e. The scope for capacity reservation is subscription i.e., only the subscription that created the reservation can use it.  So, if your VM/VMSS is in a different subscription, please create a new reservation in that subscription or create your VM/VMSS in the subscription that already has access to the capacity reservation.
 
 2.	Not deploying explicitly against the reservation 
-    In order to consume Capacity Reservation, it should be explicitly added as a property of the Virtual Machine or Virtual Machine Scale Sets. Please refer to the documentation below to learn more about how to do that:
-       •	Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm) to learn more about how to associate a new Virtual Machine to Capacity Reservation 
-       •	Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm-scale-set) to learn more about how to associate a new Virtual Machine Scale Sets to Capacity Reservation 
+       In order to consume Capacity Reservation, it should be explicitly added as a property of the Virtual Machine or Virtual Machine Scale Sets. Please refer to the documentation below to learn more about how to do that:
+              • Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm) to learn more about how to associate a new Virtual Machine to Capacity Reservation 
+              • Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm-scale-set) to learn more about how to associate a new Virtual Machine Scale Sets to Capacity Reservation 
 
 
 3.	Trying to attach running VM/VMSS without deallocating them first 
-In order to attach running VM/VMSS to Capacity Reservation, they need to be deallocated first and then at the time of reallocation, reference Capacity Reservation as a property of the VM/VMSS. 
+       In order to attach running VM/VMSS to Capacity Reservation, they need to be deallocated first and then at the time of reallocation, reference Capacity Reservation as a property of the VM/VMSS. 
