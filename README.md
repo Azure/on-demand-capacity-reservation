@@ -14,7 +14,7 @@ If you have an existing Capacity Reservations that you are not able to use with 
               ii. Update domains
               iii. UltraSSD storage 
        b. Spot VMs and Azure Dedicated Host Nodes are not supported with capacity reservation. 
-       c. For the supported VM series during public preview, up to 3 Fault Domains (FDs) will be supported. A deployment with more than 3 FDs will fail to deploy against capacity reservation.
+       c. For the supported VM series during public preview, up to 3 Fault Domains (FDs) will be supported. A deployment with more than 3 FDs will fail to deploy against capacity           reservation.
        d. Availability Sets are not supported with capacity reservation. 
        e. The scope for capacity reservation is subscription i.e., only the subscription that created the reservation can use it.  So, if your VM/VMSS is in a different subscription, please create a new reservation in that subscription or create your VM/VMSS in the subscription that already has access to the capacity reservation.
 
