@@ -41,7 +41,8 @@ Following are some of the reasons why you are not able to create capacity reserv
    Azure doesn't have capacity for the combination of requested VM size/location/Qty. In this case, either retry after some time as new capacity 
    might become available or try a different combination of VM size/location/Qty.   
    
-   Please note that Capacity Reservation creation succeeds or fails in its entirety. For a request to reserve 10 instances, success is returned only if all 10 could be allocated. Otherwise, the capacity reservation creation will fail.
+   Please note that Capacity Reservation creation succeeds or fails in its entirety. For a request to reserve 10 instances, success is returned only if all 10 
+   could be allocated. Otherwise, the capacity reservation creation will fail.
 
 2. Unsupported VM size
    Not all VM sizes are supported with Capacity Reservation. During Public Preview, we support only Av2, B, D, E, & F VM series. 
@@ -49,11 +50,13 @@ Following are some of the reasons why you are not able to create capacity reserv
 
 3. Subscription doesn't have the required quota 
    Restricted by quota: Creating capacity reservations requires quota in the same manner as it does for creating virtual machines. 
-   If you get insufficient quota error while creating capacity reservation, please request additional quota by clicking [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests) or try a different combination of VM size/location/Qty.
+   If you get insufficient quota error while creating capacity reservation, please request additional quota by clicking 
+   [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests) or try a different combination of VM size/location/Qty.
 
 4. Don’t have access to create reservation
    Reservations are only available to paid Azure customers. Sponsored accounts such as Free Trial and Azure for Students are not 
-   eligible to use this feature. In order to create a new paid Azure subscription, please click [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests).
+   eligible to use this feature. In order to create a new paid Azure subscription, please click 
+   [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests).
 
 
 Steps to create Capacity Reservation
