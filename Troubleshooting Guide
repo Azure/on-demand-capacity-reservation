@@ -1,4 +1,4 @@
-Not able to deploy Virtual Machines or Virtual Machine Scale Sets (Uniform) with Capacity Reservation
+**Not able to deploy Virtual Machines or Virtual Machine Scale Sets (Uniform) with Capacity Reservation**
 
 If you have an existing Capacity Reservations that you are not able to use with Virtual Machines or Virtual Machine Scale Sets, it could be because of any of the reasons below:
 
