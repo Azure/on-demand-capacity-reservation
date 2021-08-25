@@ -66,7 +66,10 @@ Azure will only allow a Capacity Reservation Group to be deleted when all member
 -----------------------------------------------------------------------------------------------------------------------------------------------
 ***Capacity Reservation in “Failed” provisioning State***
 
-It is possible, in a very rare circumstances, that an existing Capacity Reservation goes into a “Failed” provisioning state due to a system error or due to a customer-initiated action such as modifying the quantity reserved. In most cases, just retrying should fix the issue. However, in case the Capacity Reservation goes into the “Failed” provisioning state as a result of increasing the quantity reserved, just retrying may not fix the issue. In this situation, follow the steps below to restore the reservation:
+It is possible, in a very rare circumstances, that an existing Capacity Reservation goes into a “Failed” provisioning state   
+due to a system error or due to a customer-initiated action such as modifying the quantity reserved. In most cases, just retrying  
+should fix the issue. However, in case the Capacity Reservation goes into the “Failed” provisioning state as a result of increasing  
+the quantity reserved, just retrying may not fix the issue. In this situation, follow the steps below to restore the reservation:
 
 Steps:
 1. Go to the [Application Change Analysis](https://ms.portal.azure.com/#blade/Microsoft_Azure_ChangeAnalysis/ChangeAnalysisBaseBlade) screen on Azure portal. 
