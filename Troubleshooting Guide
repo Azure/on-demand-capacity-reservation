@@ -19,9 +19,9 @@ of any of the reasons below:
 2. Not deploying explicitly against the reservation 
    In order to consume Capacity Reservation, it should be explicitly added as a property of the Virtual Machine or Virtual Machine Scale Sets.   
    Please refer to the documentation below to learn more about how to do that:
-        • Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm) 
+        • Click [here](https://docs.microsoft.com/azure/virtual-machines/capacity-reservation-associate-vm) 
           to learn more about how to associate a new Virtual Machine to Capacity Reservation 
-        • Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-associate-vm-scale-set) 
+        • Click [here](https://docs.microsoft.com/azure/virtual-machines/capacity-reservation-associate-vm-scale-set) 
            to learn more about how to associate a new Virtual Machine Scale Sets to Capacity Reservation 
 
 
@@ -51,16 +51,16 @@ Following are some of the reasons why you are not able to create capacity reserv
 3. Subscription doesn't have the required quota 
    Restricted by quota: Creating capacity reservations requires quota in the same manner as it does for creating virtual machines. 
    If you get insufficient quota error while creating capacity reservation, please request additional quota by clicking 
-   [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests) or try a different combination of VM size/location/Qty.
+   [here](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests) or try a different combination of VM size/location/Qty.
 
 4. Don’t have access to create reservation
    Reservations are only available to paid Azure customers. Sponsored accounts such as Free Trial and Azure for Students are not 
    eligible to use this feature. In order to create a new paid Azure subscription, please click 
-   [here](https://docs.microsoft.com/en-us/azure/azure-portal/supportability/per-vm-quota-requests).
+   [here](https://docs.microsoft.com/azure/azure-portal/supportability/per-vm-quota-requests).
 
 
 Steps to create Capacity Reservation
-https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-create
+https://docs.microsoft.com/azure/virtual-machines/capacity-reservation-create
 
   
     
@@ -71,7 +71,7 @@ https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-cre
  
 Capacity Reservations can be deleted only when no Virtual Machines or Virtual Machine Scale Sets are associated to the group. 
 
-Click [here](https://docs.microsoft.com/en-us/azure/virtual-machines/capacity-reservation-modify) for detailed steps on how to delete capacity reservation. 
+Click [here](https://docs.microsoft.com/azure/virtual-machines/capacity-reservation-modify) for detailed steps on how to delete capacity reservation. 
 
 Azure will only allow a Capacity Reservation Group to be deleted when all member Capacity Reservations.
 
